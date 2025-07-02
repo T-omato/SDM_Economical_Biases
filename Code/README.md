@@ -12,3 +12,7 @@ were saved
 ### DivShift_California_.ipynb
 
 Visualizes the observation and human footprint index data on a california map. Adds a reference scalebar to show 750km. 
+
+### functions
+
+Contains functions used to analyze data in R
