@@ -16,8 +16,8 @@ categorized into "Extremely Low", "Very Low", "Low", "Moderate", and "Above Mode
 
 The commonly used income categories are approximately as follows, subject to variations for household size and other factors:
 
-Acutely low income: 0-15% of AMI
-Extremely low income:  15-30% of AMI
-Very low income:  30% to 50% of AMI
-Lower income:  50% to 80% of AMI; the term may also be used to mean 0% to 80% of AMI
-Moderate income:  80% to 120% of AMI
+- Acutely low income: 0-15% of AMI
+- Extremely low income:  15-30% of AMI
+- Very low income:  30% to 50% of AMI
+- Lower income:  50% to 80% of AMI; the term may also be used to mean 0% to 80% of AMI
+- Moderate income:  80% to 120% of AMI
