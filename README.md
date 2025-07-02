@@ -1,6 +1,15 @@
 ## SDM_Economical_Biases
 This project aims to tailor economical biases into Species Distribution Models. Initially we continue off the work down on DivShift_NAWC.
 
-Initially, the project will focus on California. The following images shows the Observation ID Density on the left, which is to say, the places where most observations occur, and on the right, the human footprint index, which is to say people density.
+## DivShift - Observation ID & Human Footprint Index
+
+Initially, the project will focus on California. The following images show the Observation ID Density on the left, which is to say, the places where most observations occur, and on the right, the human footprint index, which is to say people density. Data taken from DivShift_NAWC
 
 ![DivShift_California](images/combined_observation_and_footprint.png)
+
+## HCD Income brackets per block group
+
+In order to better assess the economical bias, ACS data for each block group is taken from the most recent census (2018 - 2023) and
+categorized into "Extremely Low", "Very Low", "Low", "Moderate", and "Above Moderate" as defined by HCD income brackets. In California there is a state AMI, and a County Level AMI, and the latter is used to avoid over and under representing in households.  
+
+![HCD_Income_Brackets_per_block_group](images/household_income_brackets_rel_AMI_per_county.png)
