@@ -1,5 +1,5 @@
 ## SDM_Economical_Biases
-This project aims to tailor economical biases into Species Distribution Models. Initially we continue off the work down on DivShift_NAWC.
+This project aims to tailor economical biases into Species Distribution Models. Initially we continue off the work of DivShift_NAWC.
 
 ## DivShift - Observation ID & Human Footprint Index
 
