@@ -36,3 +36,17 @@ The DivShift data is loaded onto R, transformed into a raster and observations l
 Finally, the observation data is joined to the income_data / classified_data. The data is used to visualize the relation between income block groups and observation density.
 
 ![observation_density_per_income_group](images/Mean_Observation_Density_raster.png)
+
+## Exploratory analysis
+
+A statewide correlation matrix using raw income (estimate) with large-area block groups excluded (area ≤ 1100 km²).
+
+![state_wide_corrMatrix](images/correlation_matrix.png)
+
+| Variable Pair | Correlation value | Meaning |
+|-------------- | ----------------- | ------- |
+| income_per_km2 & moe_per_km2 | 0.86 | Strong: areas with more income per km² also have more uncertainty per km² (likely due to urban heterogeneity) |
+| income_per_km2 & estimate | 0.23 | Moderate: raw income and income density are related |
+| income_per_km2 & density_per_km2 | 0.41 | moderate positive correlation between income concentration and observation density |
+| estimate & density_per_km2 | 0.06 | Very weak: total income alone doesn’t explain where observations happen (spatial concenttation of income matters?) |
+| area_km2 & all_other_vars | <0 | Larger areas tend to have lower density & income per km² |
