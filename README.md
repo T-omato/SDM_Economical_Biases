@@ -42,7 +42,7 @@ Finally, the observation data is joined to the income_data / classified_data. Th
 A statewide correlation matrix using raw income (estimate) with large-area block groups excluded (area ≤ 1100 km²).
 
 | Variable | Definition | Calculation |
-| -------- | | -------- | ----------- |
+| -------- | ---------- | ----------- |
 | `income_per_km2` | Total estimated income per square kilometer in a block group (normalizes income by area) | income_per_km2 = area_km2 / estimate |
 | `moe_per_km2` | Margin of error (MOE) for income, scaled per square kilometer (The ACS-reported margin of error for the income estimate) | moe_per_km2= area_km2 / moe |
 | `estimate` | Raw income estimate for the block group | Directly from ACS (B19013_001) |
