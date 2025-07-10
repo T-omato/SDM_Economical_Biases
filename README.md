@@ -41,6 +41,19 @@ Finally, the observation data is joined to the income_data / classified_data. Th
 
 A statewide correlation matrix using raw income (estimate) with large-area block groups excluded (area ≤ 1100 km²).
 
+| Variable | Definition | Calculation |
+| -------- | | -------- | ----------- |
+| `income_per_km2` | Total estimated income per square kilometer in a block group (normalizes income by area) | income_per_km2 = area_km2 / estimate |
+| `moe_per_km2` | Margin of error (MOE) for income, scaled per square kilometer (The ACS-reported margin of error for the income estimate) | moe_per_km2= area_km2 / moe |
+| `estimate` | Raw income estimate for the block group | Directly from ACS (B19013_001) |
+| `density_per_km2` | Number of biodiversity observations per square kilometer (normalizes observation counts) | density_per_km2 = area_km2 / n_obs |
+| `area_km2` | The total area of the census block group in square kilometers. | Derived from the geometry column in the spatial dataframe using: ```st_area() %>% units::set_units("km^2")``` |
+
+### Transformation
+
+- Log scaling (log1p): applied to handle skew and zeros (log(1+x)). 
+- Outlier trimming: Analysis limited to block groups with area_km2 ≤ 1100
+
 ![state_wide_corrMatrix](images/correlation_matrix.png)
 
 | Variable Pair | Correlation value | Meaning |
