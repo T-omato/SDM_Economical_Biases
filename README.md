@@ -39,7 +39,7 @@ Finally, the observation data is joined to the income_data / classified_data. Th
 
 ## Exploratory analysis
 
-A statewide correlation matrix using raw income (estimate) with large-area block groups excluded (area ≤ 1100 km²).
+A statewide correlation matrix using raw income (estimate) with large-area block groups excluded (area ≤ 1100 km²) was made analyzing the following variables:
 
 | Variable | Definition | Calculation |
 | -------- | ---------- | ----------- |
@@ -63,3 +63,7 @@ A statewide correlation matrix using raw income (estimate) with large-area block
 | income_per_km2 & density_per_km2 | 0.41 | moderate positive correlation between income concentration and observation density |
 | estimate & density_per_km2 | 0.06 | Very weak: total income alone doesn’t explain where observations happen (spatial concenttation of income matters?) |
 | area_km2 & all_other_vars | <0 | Larger areas tend to have lower density & income per km² |
+
+### Pearson correlation of income_per_km2 vs density_per_km2 for Metropolitan Districts in CA
+
+![pearson_MD](images/pearson_per_MD.png)
